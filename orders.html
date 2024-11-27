@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orders - Inventory Management</title>
+  <link rel="stylesheet" href="the.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <img src="Stocksmart.png" width="30%" alt="Logo" class="logo-img">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="orders.html" class="active">Orders</a></li>
+          <li><a href="reports.html">Reports</a></li>
+          <li><a href="suppliers.html">Suppliers</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Page Header -->
+      <header class="top-nav">
+        <h1>Orders</h1>
+        <div class="plus-icon">
+          <a href="#">+</a>
+        </div>
+      </header>
+
+      <!-- Orders Summary Section -->
+      <section class="dashboard">
+        <div class="card">
+          <h3>Total Orders</h3>
+          <p>1,245</p>
+        </div>
+        <div class="card">
+          <h3>Pending Orders</h3>
+          <p>325</p>
+        </div>
+        <div class="card">
+          <h3>Completed Orders</h3>
+          <p>900</p>
+        </div>
+        <div class="card">
+          <h3>Revenue</h3>
+          <p>$75,450</p>
+        </div>
+      </section>
+
+      <!-- Orders Table -->
+      <section class="orders">
+        <h2>Recent Orders</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Product</th>
+              <th>Status</th>
+              <th>Amount</th>
+              <th>Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#12345</td>
+              <td>Skittles</td>
+              <td><span class="badge pending">Pending</span></td>
+              <td>$250</td>
+              <td>2024-11-20</td>
+              <td>
+                <button class="btn view"><a href="skittles.jpeg"> View</button></a><br>
+                <button class="btn edit"><a href="editproduct.html">Edit</button></a><br>
+                 <button class="btn delete"><a href="deleteproduct.html">delete</button></a>
+              </td>
+            </tr>
+            <tr>
+              <td>#12346</td>
+              <td>Jawbreaker</td>
+              <td><span class="badge shipped">Shipped</span></td>
+              <td>$450</td>
+              <td>2024-11-19</td>
+              <td>
+                <button class="btn view"><a href="jawbreaker.jpeg">View</button></a><br>
+                <button class="btn edit"><a href="editproduct.html">Edit</button></a><br>
+                <button class="btn delete"><a href="deleteproduct.html">delete</button></a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

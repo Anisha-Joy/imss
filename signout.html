@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Out - Inventory Management System</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <div class="content">
+    <h1>You have been logged out</h1>
+    <p>Thank you for using the Inventory Management System. We hope to see you again soon!</p>
+    <!-- Sign Out Confirmation -->
+    <a href="signinims.html" class="btn">Go to Login</a>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2024 Stocksmart. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Example of clearing session or local storage to sign out the user
+    function signOut() {
+      // Clear the user session from storage
+      localStorage.removeItem('user'); // or sessionStorage.removeItem('user');
+      
+
+    // Call the signOut function immediately when this page is loaded
+    signOut();
+  </script>
+</body>
+</html>

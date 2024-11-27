@@ -1,0 +1,151 @@
+
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;  /* Changed from gradient to plain white */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container Styling */
+.signin-container {
+  background: #ffffff;
+  padding: 2.5em;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.signin-container:hover {
+  transform: scale(1.02);
+}
+
+/* Logo Image */
+.logo-img {
+  display: block;
+  margin: 0 auto 1em;
+}
+
+/* Form Styling */
+form {
+  margin: 0;
+}
+
+form h2 {
+  color: #2b3a42;
+  margin-bottom: 1.5em;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 1.5em;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.9em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+  border-color: #2b3a42;
+  outline: none;
+  box-shadow: 0 0 5px rgba(43, 58, 66, 0.3);
+}
+
+/* Button Styling */
+.role-btn {
+  width: 48%;
+  padding: 0.9em;
+  margin: 0.5em 1%;
+  background: #2b3a42;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.role-btn:hover {
+  background: #3a4e58;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 0.9em;
+  background: #2b3a42;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.signin-btn:hover {
+  background: #3a4e58;
+}
+
+
+}
+
+/* Link Styling */
+.signup-link {
+  margin-top: 1em;
+}
+
+.signup-link a {
+  color: #2b3a42;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.signup-link a:hover {
+  color: #6c7a89;
+}
+
+/* Error Message Styling */
+.error-message {
+  font-size: 0.9em;
+  color: red;
+  background: #ffe6e6;
+  padding: 0.8em;
+  border: 1px solid red;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .signin-container {
+    padding: 2em;
+    max-width: 90%;
+  }
+  form h2 {
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Setup - Inventory Management System</title>
+  <link rel="stylesheet" href="setup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Page Header -->
+    <header class="header">
+      <h1>Set Up Your Business</h1>
+      <p> Stocksmart helps you manage your inventory it with ease.</p>
+    </header>
+
+    <!-- Form Section -->
+    <form class="business-setup-form"action="dashboard.html" method="POST">
+      <label for="business-name">What is your business name?</label>
+      <input type="text" id="business-name" name="business-name" placeholder="Enter your business name" required>
+
+      <label for="business-type">What kind of business do you run?</label>
+      <select id="business-type" name="business-type" required>
+        <option value="" disabled selected>Select your business type</option>
+        <option value="retail">Retail</option>
+        <option value="wholesale">Wholesale</option>
+        <option value="ecommerce">E-commerce</option>
+        <option value="other">Other</option>
+      </select>
+
+      <button type="submit" class="btn">Start Using Stocksmart</button>
+    </form>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <p>&copy; 2024 Stocksmart. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

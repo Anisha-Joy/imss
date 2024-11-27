@@ -1,0 +1,79 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+
+/* Background */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.homepage-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('image.png') no-repeat center center/cover;
+}
+
+/* Content */
+.content {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #2b3a42; /* Same as the navigation bar */
+  color: #ffffff;           /* White text for contrast */
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3a4e58; /* Slightly lighter shade for hover */
+  transform: scale(1.05);    /* Add a subtle zoom effect */
+}
+.footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #2b3a42; /* Matches the sidebar/nav bar color */
+  color: #ffffff;
+  font-size: 0.9em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2em;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  margin: 0;
+}
+
+
+

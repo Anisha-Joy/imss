@@ -1,0 +1,208 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  background-color: #2b3a42;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5em;
+  box-sizing: border-box;
+
+  /* Fixed height and position */
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.sidebar-header .logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 1em 0;
+}
+
+.sidebar nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1em;
+  display: block;
+  padding: 0.5em;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+  background-color: #3a4e58;
+}
+
+/* Main Content Styling */
+.main-content {
+  flex: 1;
+  padding: 2em;
+  box-sizing: border-box;
+
+  /* Adjust margin to avoid overlap with the fixed sidebar */
+  margin-left: 250px;
+}
+
+.header {
+  margin-bottom: 1.5em;
+}
+
+h1 {
+  color: #2b3a42;
+}
+
+/* Forms Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 400px;
+}
+
+label {
+  font-weight: bold;
+  color: #2b3a42;
+}
+
+input, select {
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+button {
+  padding: 0.8em;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background-color: #2b3a42;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #3a4e58;
+  color: #ffffff;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2em;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.8em;
+  text-align: left;
+}
+
+th {
+  background-color: #2b3a42;
+  color: #ffffff;
+}
+
+td {
+  color: #2b3a42;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2b3a42;
+  padding: 10px 2em;
+  color: white;
+}
+
+.top-nav h1 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.plus-icon a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.plus-icon a:hover {
+  color: #f5a623;
+  transform: scale(1.2);
+}
+
+
+.add.btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it inline-block */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.add.btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

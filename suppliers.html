@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suppliers - Inventory Management</title>
+  <link rel="stylesheet" href="the.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <img src="Stocksmart.png" width="30%" alt="Logo" class="logo-img">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="reports.html">Reports</a></li>
+          <li><a href="suppliers.html" class="active">Suppliers</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="top-nav">
+        <h1>Suppliers</h1>
+        <div class="plus-icon">
+          <button onclick="showAddSupplierForm()"><a href="addsupplier.php"> Add Supplier</button></a>
+        </div>
+      </header>
+
+      <!-- Add Supplier Form (Hidden by Default) -->
+      <div id="add-supplier-form" class="modal">
+        <div class="modal-content">
+          
+
+      <!-- Suppliers Section -->
+      <section class="suppliers-section">
+        <h2>Supplier Directory</h2>
+        <div class="suppliers-grid">
+          <!-- Supplier Card -->
+          <div class="supplier-card">
+            <h3>Supplier A</h3>
+            <p><strong>Contact:</strong> 123-456-7890</p>
+            <p><strong>Email:</strong> supplierA@example.com</p>
+            <p><strong>Address:</strong> 123 Main Street</p>
+            <button class="btn view" onclick="viewSupplier(1)"><a href="viewsupplier.html">View</button></a>
+            <button class="btn edit" onclick="editSupplier(1)"><a href="editsupplier.html">Edit</button></a>
+            <button class="btn delete" onclick="confirmDelete(1)">Delete</button>
+          </div>
+          <div class="supplier-card">
+            <h3>Supplier B</h3>
+            <p><strong>Contact:</strong> 987-654-3210</p>
+            <p><strong>Email:</strong> supplierB@example.com</p>
+            <p><strong>Address:</strong> 456 Oak Avenue</p>
+            <button class="btn view" onclick="viewSupplier(2)"><a href="viewsupplier.html"> View</button></a>
+            <button class="btn edit" onclick="editSupplier(2)"><a href="editsupplier.html"> Edit</button></a>
+            <button class="btn delete" onclick="confirmDelete(2)">Delete</button>
+          </div>
+          <!-- Add more supplier cards as needed -->
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+
+

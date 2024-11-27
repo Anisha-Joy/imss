@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product</title>
+    <style>
+        /* General Body Style */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f7fa; /* Replace with your project background color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Form Container */
+        .form-container {
+            background-color: #ffffff; /* Replace with complementary project color */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Form Labels */
+        label {
+            font-size: 14px;
+            color: #333; /* Text color */
+            font-weight: bold;
+        }
+
+        /* Form Inputs */
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc; /* Neutral border */
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        textarea:focus {
+            border-color: #1a73e8; /* Highlight border on focus */
+            outline: none;
+        }
+
+        /* Button Style */
+        button {
+            background-color: #1a73e8; /* Main action color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #155bb5; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="edit.php" method="POST">
+            <input type="hidden" name="product_id" value="<?php echo $_GET['product_id']; ?>">
+            <label>Product Name:</label>
+            <input type="text" name="name" value="<?php echo $product['name']; ?>" required><br>
+            <label>Category ID:</label>
+            <input type="number" name="category_id" value="<?php echo $product['category_id']; ?>" required><br>
+            <label>Quantity:</label>
+            <input type="number" name="quantity" value="<?php echo $product['quantity']; ?>" required><br>
+            <label>Price:</label>
+            <input type="text" name="price" value="<?php echo $product['price']; ?>" required><br>
+            <label>Description:</label>
+            <textarea name="description" required><?php echo $product['description']; ?></textarea><br>
+            <button type="submit">Update Product</button>
+        </form>
+    </div>
+</body>
+</html>

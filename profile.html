@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Inventory Management</title>
+  <link rel="stylesheet" href="the.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <img src="Stocksmart.png" width="30%" alt="Logo" class="logo-img">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="reports.html">Reports</a></li>
+          <li><a href="suppliers.html">Suppliers</a></li>
+          <li><a href="profile.html" class="active"><i class="bi bi-person-fill"></i>Profile</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-content">
+          <h1>My Profile</h1>
+          <i class="profile-icon"></i>
+        </div>
+      </header>
+
+      <!-- Profile Section -->
+      <section class="profile-section">
+        <div class="profile-container">
+          <!-- Profile Picture Card -->
+          <div class="profile-picture-card">
+            <div class="profile-picture">
+              <img src="default-avatar.png" alt="Profile" id="profile-img">
+              <label for="profile-pic" class="upload-btn">Change Picture</label>
+              <input type="file" id="profile-pic" accept="image/*" onchange="previewImage(event)">
+            </div>
+          </div>
+
+          <!-- Profile Details Form -->
+          <form class="profile-form" action="profile.php" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+      </section>
+      <button class="logout-btn" onclick="logout()"><a href="signout.html">Log Out</button></a>
+
+    </main>
+  </div>
+
+  <script>
+    function previewImage(event) {
+      const profileImg = document.getElementById('profile-img');
+      profileImg.src = URL.createObjectURL(event.target.files[0]);
+    }
+  </script>
+</body>
+</html>
+
+
+
+       
+
+
+           

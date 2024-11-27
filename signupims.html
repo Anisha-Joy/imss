@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <img src="Stocksmart.png"width="10%" alt="Logo" class="logo-img">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signupims.css">
+</head>
+<body>
+  <div class="signup-container">
+    <div class="signup-card">
+      <h1>Create Your Account</h1>
+      <form action="signup.php" method="POST">
+        <!-- Full Name -->
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Create a password" required>
+        </div>
+        <!-- Confirm Password -->
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+        </div>
+        <!-- Sign Up Button -->
+        <button type="submit" class="signup-btn"><a href="dashboard.php"> Sign Up</button>
+        <p class="login-link">Already have an account? <a href="signin.php">Log in</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
